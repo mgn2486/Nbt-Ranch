@@ -18,7 +18,7 @@ module.exports = "<app-layout>\r\n  <mat-sidenav-container>\r\n    <mat-sidenav 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"carouselExampleSlidesOnly\" class=\"carousel slide\" data-ride=\"carousel\">\n  <div class=\"carousel-inner\">\n    <div class=\"carousel-item active\">\n      <img class=\"d-block w-100\" src=\"assets/images/vegetables/veg_1.jpg\" alt=\"First slide\">\n    </div>\n    <!-- <div class=\"carousel-item\">\n      <img class=\"d-block w-100\" src=\"assets/images/banner/banner_2.jpg\" alt=\"Second slide\">\n    </div>\n    <div class=\"carousel-item\">\n      <img class=\"d-block w-100\" src=\"assets/images/banner/banner_3.jpg\" alt=\"Third slide\">\n    </div> -->\n  </div>\n</div>\n<br>"
+module.exports = "<div id=\"carouselExampleSlidesOnly\" class=\"carousel slide\" data-ride=\"carousel\">\n  <div class=\"carousel-inner\">\n    <div class=\"carousel-item active\">\n      <img class=\"d-block w-100\" src=\"assets/images/rsz_banner_1.jpg\" alt=\"First slide\">\n    </div>\n    <!-- <div class=\"carousel-item\">\n      <img class=\"d-block w-100\" src=\"assets/images/banner/banner_2.jpg\" alt=\"Second slide\">\n    </div>\n    <div class=\"carousel-item\">\n      <img class=\"d-block w-100\" src=\"assets/images/banner/banner_3.jpg\" alt=\"Third slide\">\n    </div> -->\n  </div>\n</div>\n<br>"
 
 /***/ }),
 
@@ -29,7 +29,7 @@ module.exports = "<div id=\"carouselExampleSlidesOnly\" class=\"carousel slide\"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n    <h4>CONTACT US</h4>  \n  <hr class=\"section-hr-line\">\n  <p>Please use any of the following options</p>\n  \n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-12 col-md-8\">\n        <mat-card style=\"margin-bottom: 15px;\"  color=\"primary\">\n            <mat-card-header  color=\"primary\">\n               <mat-card-title> <h4 class=\"site-text\">Send Us a Message</h4></mat-card-title>\n               <hr>\n           </mat-card-header>\n           <!-- <img mat-card-image src=\"assets/images/home/home_2.jpg\" alt=\"Photo of a Shiba Inu\"> -->\n           <mat-card-content>\n            <form [formGroup]=\"ContactForm\" autocomplete=\"off\" class=\"col-12 white\" (ngSubmit)=\"OnSubmit(ContactForm)\" (blur)=\"logValidationErrors()\">\n                  <div class=\"input-field-class\">\n          \n                    <div class=\"row\">\n                      <mat-form-field  class=\"col-12\">\n                        <mat-label>Full Name</mat-label>\n                        <input matInput placeholder=\"Full Name\" #fullName ngModel formControlName=\"fullName\" (blur)=\"logValidationErrors()\">\n                        <mat-icon matPrefix>person_outline</mat-icon>\n                        <mat-error *ngIf=\"formErrors.fullName\"><b>{{formErrors.fullName}}</b></mat-error>\n                      </mat-form-field>\n                    </div>\n          \n                    <div class=\"row\">\n                      <mat-form-field  class=\"col\">\n                        <mat-label>Email Address</mat-label>    \n                        <input matInput placeholder=\"Email Address\" #emailAddress ngModel formControlName=\"emailAddress\" (blur)=\"logValidationErrors()\">\n                        <mat-icon matPrefix>mail</mat-icon>\n                        <mat-error *ngIf=\"formErrors.emailAddress\"><b>{{formErrors.emailAddress}}</b></mat-error>\n                      </mat-form-field>\n                    </div>\n          \n                    <div class=\"row\">\n                      <mat-form-field class=\"col\">\n                        <mat-label>Subject</mat-label>      \n                        <input matInput (keyup)=\"applyFilter($event.target.value)\"  placeholder=\"Subject\" #subject ngModel formControlName=\"subject\" (blur)=\"logValidationErrors()\">\n                        <mat-icon matPrefix>mail</mat-icon>\n                        <mat-error *ngIf=\"formErrors.subject\"><b>{{formErrors.subject}}</b></mat-error>\n                      </mat-form-field>\n                    </div>\n          \n                    <div class=\"row\">\n                        <mat-form-field class=\"col stretch-height\" >\n                            <mat-label>Message</mat-label>\n                            <textarea matInput rows=\"10\" (keyup)=\"applyFilter($event.target.value)\"  placeholder=\"Message\" formControlName=\"message\" (blur)=\"logValidationErrors()\"></textarea>\n                            <mat-error *ngIf=\"formErrors.message\"><b>{{formErrors.message}}</b></mat-error>\n                          </mat-form-field>\n                    </div>\n          \n                    <div class=\"row s12\">\n                      <button color=\"primary\" [disabled]=\"!ContactForm.valid\" mat-raised-button>Sign - UP</button>\n                    </div>\n                  </div>\n               </form>\n           </mat-card-content>\n          </mat-card> \n      </div>\n      <div class=\"col-12 col-md-4\">\n        <h4>Call Us</h4>\n      <hr>\n      <p>\n        <b>Landline : </b> +27 (0)079 528 9966 <br>\n        <b>Mobile : </b>+263 (0)77 341 7722<br>\n        <b>Email  : </b> info@nbtranch.co.za <br>       \n    \n        <br>\n        taurain@nbtranch.co.za\n        <br>\n        vimbayin@nbtranch.co.za\n        <br>       \n      </p>\n      <br>\n      <h4>Physical Address : </h4>\n      <hr>\n      <p> \n        482 & 483 Wasmmer Drive <br>Kensington <br>Bulawayo,<br>Zimbabwe     \n      </p>\n      </div>\n    </div>\n  \n    <div class=\"row\">\n      <div class=\"col\">\n        <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2309.087446144257!2d28.73102377196934!3d-20.165024880399365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDA5JzU0LjEiUyAyOMKwNDMnNTUuMCJF!5e1!3m2!1sen!2sza!4v1592123499016!5m2!1sen!2sza\" width=\"100%\" height=\"450\" frameborder=\"0\" style=\"border:1 px solid grey\" allowfullscreen></iframe>\n      </div>\n    </div>\n  </div>\n  </div>\n  "
+module.exports = "<div class=\"container\">\n    <h4>CONTACT US</h4>  \n  <hr class=\"section-hr-line\">\n  <p>Please use any of the following options</p>\n  \n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-12 col-md-8\">\n        <mat-card style=\"margin-bottom: 15px;\"  color=\"primary\">\n            <mat-card-header  color=\"primary\">\n               <mat-card-title> <h4 class=\"site-text\">Send Us a Message</h4></mat-card-title>\n               <hr>\n           </mat-card-header>\n           <!-- <img mat-card-image src=\"assets/images/home/home_2.jpg\" alt=\"Photo of a Shiba Inu\"> -->\n           <mat-card-content>\n            <form [formGroup]=\"ContactForm\" autocomplete=\"off\" class=\"col-12 white\" (ngSubmit)=\"OnSubmit(ContactForm)\" (blur)=\"logValidationErrors()\">\n                  <div class=\"input-field-class\">\n          \n                    <div class=\"row\">\n                      <mat-form-field  class=\"col-12\">\n                        <mat-label>Full Name</mat-label>\n                        <input matInput placeholder=\"Full Name\" #fullName ngModel formControlName=\"fullName\" (blur)=\"logValidationErrors()\">\n                        <mat-icon matPrefix>person_outline</mat-icon>\n                        <mat-error *ngIf=\"formErrors.fullName\"><b>{{formErrors.fullName}}</b></mat-error>\n                      </mat-form-field>\n                    </div>\n          \n                    <div class=\"row\">\n                      <mat-form-field  class=\"col\">\n                        <mat-label>Email Address</mat-label>    \n                        <input matInput placeholder=\"Email Address\" #emailAddress ngModel formControlName=\"emailAddress\" (blur)=\"logValidationErrors()\">\n                        <mat-icon matPrefix>mail</mat-icon>\n                        <mat-error *ngIf=\"formErrors.emailAddress\"><b>{{formErrors.emailAddress}}</b></mat-error>\n                      </mat-form-field>\n                    </div>\n          \n                    <div class=\"row\">\n                      <mat-form-field class=\"col\">\n                        <mat-label>Subject</mat-label>      \n                        <input matInput (keyup)=\"applyFilter($event.target.value)\"  placeholder=\"Subject\" #subject ngModel formControlName=\"subject\" (blur)=\"logValidationErrors()\">\n                        <mat-icon matPrefix>mail</mat-icon>\n                        <mat-error *ngIf=\"formErrors.subject\"><b>{{formErrors.subject}}</b></mat-error>\n                      </mat-form-field>\n                    </div>\n          \n                    <div class=\"row\">\n                        <mat-form-field class=\"col stretch-height\" >\n                            <mat-label>Message</mat-label>\n                            <textarea matInput rows=\"10\" (keyup)=\"applyFilter($event.target.value)\"  placeholder=\"Message\" formControlName=\"message\" (blur)=\"logValidationErrors()\"></textarea>\n                            <mat-error *ngIf=\"formErrors.message\"><b>{{formErrors.message}}</b></mat-error>\n                          </mat-form-field>\n                    </div>\n          \n                    <div class=\"row s12\">\n                      <button color=\"primary\" [disabled]=\"!ContactForm.valid\" mat-raised-button>Sign - UP</button>\n                    </div>\n                  </div>\n               </form>\n           </mat-card-content>\n          </mat-card> \n      </div>\n      <div class=\"col-12 col-md-4\">\n        <h4>Call Us</h4>\n      <hr>\n      <p>\n        <span style=\"margin: 6px;\"><mat-icon matPrefix>call</mat-icon></span><b>International : </b> +27 (0) 79 528 9966 <br>\n        <span style=\"margin: 6px;\"><mat-icon matPrefix>call</mat-icon></span><b>Mobile : </b>+263 (0) 77 341 7722<br>\n        <span style=\"margin: 6px;\"><mat-icon matPrefix>mail</mat-icon></span><b>Email  : </b><a href=\"mailto:info@nbtranch?Subject=Hello%20again\" target=\"_top\">info@nbtranch.co.za</a> <br>       \n    \n        <br>\n        <a href=\"mailto:taurain@nbtranch?Subject=Hello%20again\" target=\"_top\">taurain@nbtranch.co.za</a>\n        <br>\n        <a href=\"mailto:vimbayin@nbtranch.co.za?Subject=Hello%20again\" target=\"_top\">vimbayin@nbtranch.co.za</a>\n        <br>       \n      </p>\n      <br>\n      <h4>Physical Address : </h4>\n      <hr>\n      <p> \n        482 & 483 Wasmmer Drive <br>Kensington <br>Bulawayo,<br>Zimbabwe     \n      </p>\n      </div>\n    </div>\n  \n    <div class=\"row\">\n      <div class=\"col\">\n        <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2309.087446144257!2d28.73102377196934!3d-20.165024880399365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDA5JzU0LjEiUyAyOMKwNDMnNTUuMCJF!5e1!3m2!1sen!2sza!4v1592123499016!5m2!1sen!2sza\" width=\"100%\" height=\"450\" frameborder=\"0\" style=\"border:1 px solid grey\" allowfullscreen></iframe>\n      </div>\n    </div>\n  </div>\n  </div>\n  "
 
 /***/ }),
 
@@ -62,7 +62,7 @@ module.exports = "<p>gallery works!</p>\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<section fxLayout=\"column\" fxFlexAlign=\"stretch\">\n    \n    \n    \n    <div class=\"banner\">\n        <app-banner></app-banner>\n    </div>\n    <div fxFlexAlign=\"center\">\n      <h3>Nbt-Ranch</h3>\n    </div> \n    <div fxLayout=\"row wrap\" fxLayoutAlign=\"center center\" class=\"layout-wrapper\" >\n        <div fxFlex=\"80%\" fxFlex.lt-md=\"100%\" class=\"flex-wrapper\">\n            <div class=\"row\">\n                   <div class=\"col-sm\">\n                       <mat-card class=\"example-card\">\n                           <mat-card-header  color=\"primary\">\n                               <div mat-card-avatar class=\"example-header-image\"></div>\n                               <mat-card-title>Milk - Supply</mat-card-title>\n                           </mat-card-header>\n                           <img mat-card-image src=\"assets/images/home/home_2.jpg\" alt=\"Photo of a Shiba Inu\">\n                           <mat-card-content>\n                               <p>\n                               The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.\n                               A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally\n                               bred for hunting.\n                               </p>\n                           </mat-card-content>\n                           <mat-card-actions>\n                               <button mat-button>LIKE</button>\n                               <button mat-button>SHARE</button>\n                           </mat-card-actions>\n                       </mat-card>\n                   </div>\n           \n                   <div class=\"col-sm\" class=\"col-md\">\n                       <mat-card class=\"example-card\">\n                           <mat-card-header >\n                               <div mat-card-avatar class=\"example-header-image\"></div>\n                               <mat-card-title>Meat - Production</mat-card-title>\n                           </mat-card-header>\n                           <img mat-card-image src=\"assets/images/home/home_3.jpg\" alt=\"Photo of a Shiba Inu\">\n                           <mat-card-content>\n                               <p>\n                               The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.\n                               A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally\n                               bred for hunting.\n                               </p>\n                           </mat-card-content>\n                           <mat-card-actions>\n                               <button mat-button>LIKE</button>\n                               <button mat-button>SHARE</button>\n                           </mat-card-actions>\n                       </mat-card>\n                   </div>\n                   <div class=\"col-sm\">\n                       <mat-card class=\"example-card\">\n                           <mat-card-header >\n                               <div mat-card-avatar class=\"example-header-image\"></div>\n                               <mat-card-title>Poultry Farming</mat-card-title>\n                           </mat-card-header>\n                           <img mat-card-image src=\"assets/images/home/home_1.jpg\" alt=\"Photo of a Shiba Inu\">\n                           <mat-card-content>\n                            <p>We offer healthy food supplies. We offer healthy food supplies. We offer healthy food supplies. We offer healthy food supplies</p> \n                           </mat-card-content>\n                           <mat-card-actions>\n                               <button mat-button>LIKE</button>\n                               <button mat-button>SHARE</button>\n                           </mat-card-actions>\n                       </mat-card>\n                   </div>\n                </div>\n           <br>\n            <mat-tab-group mat-stretch-tabs (selectedTabChange)=\"executeSelectedChange($event)\">\n              <mat-tab label=\"Milk\"> \n               <p>We offer healthy food supplies</p> \n              </mat-tab>\n              <mat-tab label=\"Organic Fruits\">\n               <p>We offer healthy food supplies. We offer healthy food supplies. We offer healthy food supplies. We offer healthy food supplies</p> \n              </mat-tab>\n              <mat-tab label=\"Eggs\">\n               <p>We offer healthy food supplies. We offer healthy food supplies. We offer healthy food supplies. We offer healthy food supplies</p>         \n              </mat-tab>\n            </mat-tab-group>  \n\n        </div>\n    </div>\n   </section>\n   "
+module.exports = "\n<section fxLayout=\"column\" fxFlexAlign=\"stretch\">\n    \n    \n    \n    <div class=\"banner\">\n        <app-banner></app-banner>\n    </div>\n    <div fxFlexAlign=\"center\">\n      <h3>Nbt-Ranch</h3>\n    </div> \n    <div fxLayout=\"row wrap\" fxLayoutAlign=\"center center\" class=\"layout-wrapper\" >\n        <div fxFlex=\"80%\" fxFlex.lt-md=\"100%\" class=\"flex-wrapper\">\n            <div class=\"row\">\n                   <div class=\"col-sm\">\n                       <mat-card class=\"example-card\">\n                           <mat-card-header  color=\"primary\">\n                               <div mat-card-avatar class=\"example-header-image\"></div>\n                               <mat-card-title>Milk - Supply</mat-card-title>\n                           </mat-card-header>\n                           <img mat-card-image src=\"assets/images/milk/milk_1.jpeg\" alt=\"Photo of a Shiba Inu\">\n                           <mat-card-content>\n                               <p>\n                               The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.\n                               A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally\n                               bred for hunting.\n                               </p>\n                           </mat-card-content>\n                           <mat-card-actions>\n                               <button mat-button>LIKE</button>\n                               <button mat-button>SHARE</button>\n                           </mat-card-actions>\n                       </mat-card>\n                   </div>\n           \n                   <div class=\"col-sm\" class=\"col-md\">\n                       <mat-card class=\"example-card\">\n                           <mat-card-header >\n                               <div mat-card-avatar class=\"example-header-image\"></div>\n                               <mat-card-title>Meat - Production</mat-card-title>\n                           </mat-card-header>\n                           <img mat-card-image src=\"assets/images/meat/meat_1.jpg\" alt=\"Photo of a Shiba Inu\">\n                           <mat-card-content>\n                               <p>\n                               The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.\n                               A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally\n                               bred for hunting.\n                               </p>\n                           </mat-card-content>\n                           <mat-card-actions>\n                               <button mat-button>LIKE</button>\n                               <button mat-button>SHARE</button>\n                           </mat-card-actions>\n                       </mat-card>\n                   </div>\n                   <div class=\"col-sm\">\n                       <mat-card color=\"primary\">\n                           <mat-card-header >\n                               <div mat-card-avatar class=\"example-header-image\"></div>\n                               <mat-card-title>Poultry Farming</mat-card-title>\n                           </mat-card-header>\n                           <img mat-card-image src=\"assets/images/poultry/poultry_1.jpg\" alt=\"Photo of a Shiba Inu\">\n                           <mat-card-content>\n                            <p>We offer healthy food supplies. We offer healthy food supplies. We offer healthy food supplies. We offer healthy food supplies</p> \n                           </mat-card-content>\n                           <mat-card-actions>\n                               <button mat-button>LIKE</button>\n                               <button mat-button>SHARE</button>\n                           </mat-card-actions>\n                       </mat-card>\n                   </div>\n                </div>\n           <br>\n            <mat-tab-group mat-stretch-tabs (selectedTabChange)=\"executeSelectedChange($event)\">\n              <mat-tab label=\"Milk\"> \n               <p>We offer healthy food supplies</p> \n              </mat-tab>\n              <mat-tab label=\"Organic Fruits\">\n               <p>We offer healthy food supplies. We offer healthy food supplies. We offer healthy food supplies. We offer healthy food supplies</p> \n              </mat-tab>\n              <mat-tab label=\"Eggs\">\n               <p>We offer healthy food supplies. We offer healthy food supplies. We offer healthy food supplies. We offer healthy food supplies</p>         \n              </mat-tab>\n            </mat-tab-group>  \n\n        </div>\n    </div>\n   </section>\n   "
 
 /***/ }),
 
@@ -84,7 +84,7 @@ module.exports = "<div fxLayout=\"row wrap\" fxLayoutAlign=\"center center\" cla
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div fxLayout=\"row wrap\" fxLayoutAlign=\"center center\" class=\"layout-wrapper\" >\n    <div fxFlex=\"80%\" fxFlex.lt-md=\"100%\" class=\"flex-wrapper\">\n        <mat-toolbar color=\"primary\">\n            <div fxHide.gt-xs>\n                <button mat-icon-button (click)=\"onToggleSidenav()\">\n                    <mat-icon>menu</mat-icon>\n                </button>\n            </div>\n            <div>\n                <a routerLink=\"/home\">NBT - Ranch</a>\n            </div>\n            <div fxFlex fxLayout fxLayoutAlign=\"end\" fxHide.xs>\n                <ul fxLayout fxLayoutGap=\"15px\" class=\"navigation-items\">\n                    <li>\n                        <a routerLink=\"/aboutus\">About-Us</a>\n                    </li>\n                    <li>\n                        <a routerLink=\"/courses\">Our-Products</a>\n                    </li>\n                    <li>\n                        <a routerLink=\"/images\">Gallery</a>\n                    </li>\n                    <li>\n                        <a routerLink=\"/tascusers\">Members-Area</a>\n                    </li>\n                    <li>\n                        <a routerLink=\"/team\">Management</a>\n                    </li>\n                    <li>\n                        <a routerLink=\"/contactus\">Contact-Us</a>\n                    </li>\n                </ul>\n            </div>\n          </mat-toolbar>\n        \n    </div>\n\n</div>"
+module.exports = "<div fxLayout=\"row wrap\" fxLayoutAlign=\"center center\" class=\"layout-wrapper\" >\n    <div fxFlex=\"80%\" fxFlex.lt-md=\"100%\" class=\"flex-wrapper\">\n        <mat-toolbar color=\"primary\">\n            <div fxHide.gt-xs>\n                <button mat-icon-button (click)=\"onToggleSidenav()\">\n                    <mat-icon>menu</mat-icon>\n                </button>\n            </div>\n            <div>\n                <a routerLink=\"/home\">NBT - Ranch</a>\n            </div>\n            <div fxFlex fxLayout fxLayoutAlign=\"end\" fxHide.xs>\n                <ul fxLayout fxLayoutGap=\"15px\" class=\"navigation-items\">\n                    <li>\n                        <a routerLink=\"/aboutus\">About-Us</a>\n                    </li>\n                    <li>\n                        <a routerLink=\"/courses\">Our-Products</a>\n                    </li>\n                    <li>\n                        <a routerLink=\"/images\">Gallery</a>\n                    </li>\n                    <li>\n                        <a routerLink=\"/members\">Members-Area</a>\n                    </li>\n                    <li>\n                        <a routerLink=\"/team\">Management</a>\n                    </li>\n                    <li>\n                        <a routerLink=\"/contactus\">Contact-Us</a>\n                    </li>\n                </ul>\n            </div>\n          </mat-toolbar>\n        \n    </div>\n\n</div>"
 
 /***/ }),
 
@@ -95,7 +95,7 @@ module.exports = "<div fxLayout=\"row wrap\" fxLayoutAlign=\"center center\" cla
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-nav-list>\n    <a mat-list-item routerLink=\"/home\" (click)=\"onSidenavClose()\">\n      <mat-icon>home</mat-icon> <span class=\"nav-caption\">Home</span>\n    </a>\n    <a mat-list-item routerLink=\"/aboutus\" (click)=\"onSidenavClose()\">\n      <mat-icon>account_balance</mat-icon><span class=\"nav-caption\">About-Us</span>\n    </a>\n    <a mat-list-item routerLink=\"/courses\" (click)=\"onSidenavClose()\">\n      <mat-icon>add_photo_alternate</mat-icon><span class=\"nav-caption\">Our-Products</span>\n    </a>\n    <a mat-list-item routerLink=\"/images\" (click)=\"onSidenavClose()\">\n      <mat-icon>add_photo_alternate</mat-icon><span class=\"nav-caption\">Gallery</span>\n    </a>\n    <a mat-list-item routerLink=\"/tascusers\" (click)=\"onSidenavClose()\">\n      <mat-icon>group</mat-icon><span class=\"nav-caption\">Members-Area</span>\n    </a>\n    <a mat-list-item routerLink=\"/team\" (click)=\"onSidenavClose()\">\n      <mat-icon>add_photo_alternate</mat-icon><span class=\"nav-caption\">Management</span>\n    </a>\n    <a mat-list-item routerLink=\"/contactus\" (click)=\"onSidenavClose()\">\n      <mat-icon>local_post_office</mat-icon><span class=\"nav-caption\">Contact-Us</span>\n    </a>\n    <mat-list-item [matMenuTriggerFor]=\"menu\">\n      <mat-icon>unfold_more</mat-icon>\n      <a matline>SA-New</a>\n    </mat-list-item>\n    <mat-menu #menu=\"matMenu\">\n      <button mat-menu-item (click)=\"onSidenavClose()\">View profile</button>\n      <button mat-menu-item (click)=\"onSidenavClose()\">Add contact</button>\n    </mat-menu>\n  </mat-nav-list>"
+module.exports = "<mat-nav-list>\n    <a mat-list-item routerLink=\"/home\" (click)=\"onSidenavClose()\">\n      <mat-icon>home</mat-icon> <span class=\"nav-caption\">Home</span>\n    </a>\n    <a mat-list-item routerLink=\"/aboutus\" (click)=\"onSidenavClose()\">\n      <mat-icon>account_balance</mat-icon><span class=\"nav-caption\">About-Us</span>\n    </a>\n    <a mat-list-item routerLink=\"/courses\" (click)=\"onSidenavClose()\">\n      <mat-icon>add_photo_alternate</mat-icon><span class=\"nav-caption\">Our-Products</span>\n    </a>\n    <a mat-list-item routerLink=\"/images\" (click)=\"onSidenavClose()\">\n      <mat-icon>add_photo_alternate</mat-icon><span class=\"nav-caption\">Gallery</span>\n    </a>\n    <a mat-list-item routerLink=\"/members\" (click)=\"onSidenavClose()\">\n      <mat-icon>group</mat-icon><span class=\"nav-caption\">Members-Area</span>\n    </a>\n    <a mat-list-item routerLink=\"/team\" (click)=\"onSidenavClose()\">\n      <mat-icon>add_photo_alternate</mat-icon><span class=\"nav-caption\">Management</span>\n    </a>\n    <a mat-list-item routerLink=\"/contactus\" (click)=\"onSidenavClose()\">\n      <mat-icon>local_post_office</mat-icon><span class=\"nav-caption\">Contact-Us</span>\n    </a>\n    <mat-list-item [matMenuTriggerFor]=\"menu\">\n      <mat-icon>unfold_more</mat-icon>\n      <a matline>SA-New</a>\n    </mat-list-item>\n    <mat-menu #menu=\"matMenu\">\n      <button mat-menu-item (click)=\"onSidenavClose()\">View profile</button>\n      <button mat-menu-item (click)=\"onSidenavClose()\">Add contact</button>\n    </mat-menu>\n  </mat-nav-list>"
 
 /***/ }),
 
@@ -106,7 +106,7 @@ module.exports = "<mat-nav-list>\n    <a mat-list-item routerLink=\"/home\" (cli
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>sign-in works!</p>\n"
+module.exports = "<mat-card color=\"primary\" class=\"example-card\">\n        <mat-card-header  color=\"primary\">\n           <div mat-card-avatar class=\"example-header-image\"></div>\n           <mat-card-title>Nbt -Ranch - System Login</mat-card-title>\n       </mat-card-header>\n       <mat-card-content>\n         <div *ngIf=\"isLoginError\" class=\"red-text center error-message\">\n           <i class=\"material-icons\">error</i> Incorrect username or password\n       </div>\n       <form [formGroup]=\"SignInForm\" autocomplete=\"off\" class=\"col-12 white\" (ngSubmit)=\"OnSubmit(SignInForm)\">\n   \n         <div class=\"input-field-class\">            \n           <mat-form-field>\n             <mat-label>User name</mat-label>      \n             <input matInput placeholder=\"email address\" #username ngModel formControlName=\"username\" (blur)=\"logValidationErrors()\">\n             <mat-icon matPrefix>person_outline</mat-icon>\n             <mat-error *ngIf=\"formErrors.username\"><b>{{formErrors.username}}</b></mat-error>\n           </mat-form-field>\n           \n           <mat-form-field> \n             <mat-label>Account Password</mat-label>      \n             <input type=\"password\" matInput  #password ngModel formControlName=\"password\" placeholder=\"Password\" (blur)=\"logValidationErrors()\">\n             <mat-icon matPrefix>enhanced_encryption</mat-icon>\n             <mat-error *ngIf=\"formErrors.password\"><b>{{formErrors.password}}</b></mat-error>\n           </mat-form-field>\n         </div>\n   \n         <div class=\"row s12\">\n           <button color=\"primary\" [disabled]=\"!SignInForm.valid\" mat-raised-button>Sign - In</button>\n         </div>\n       </form>\n       </mat-card-content>\n   </mat-card>\n   "
 
 /***/ }),
 
@@ -117,7 +117,7 @@ module.exports = "<p>sign-in works!</p>\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>sign-up works!</p>\n"
+module.exports = "<mat-card class=\"example-card\" color=\"primary\">\n        <mat-card-header  color=\"primary\">\n           <div mat-card-avatar class=\"example-header-image\"></div>\n           <mat-card-title color=\"primary\">Nbt Ranch - System Registration</mat-card-title>\n       </mat-card-header>\n       <!-- <img mat-card-image src=\"assets/images/home/home_2.jpg\" alt=\"Photo of a Shiba Inu\"> -->\n       <mat-card-content>\n        <div *ngIf=\"isRegistrationError\" class=\"red-text center error-message\">\n            <i class=\"material-icons\">error</i> Incorrect username or password\n        </div>\n        <form [formGroup]=\"SignUpForm\" autocomplete=\"off\" class=\"col-12 white\" (ngSubmit)=\"OnSubmit(SignUpForm)\">\n           <div class=\"input-field-class\">\n      \n             <div class=\"row\">\n               <mat-form-field  class=\"col s4\">\n                 <mat-label>First name</mat-label>\n                 <input matInput placeholder=\"First Name\" #firstName ngModel formControlName=\"firstName\"  (blur)=\"logValidationErrors()\">\n                 <mat-icon matPrefix>person_outline</mat-icon>\n                 <mat-error *ngIf=\"formErrors.firstName\"><b>{{formErrors.firstName}}</b></mat-error>\n               </mat-form-field>\n               <mat-form-field class=\"col s4\">\n                 <mat-label>Last name</mat-label>\n                 <input matInput placeholder=\"Last Name\" #lastName ngModel formControlName=\"lastName\" (blur)=\"logValidationErrors()\">\n                 <mat-icon matPrefix>person_outline</mat-icon>\n                 <mat-error *ngIf=\"formErrors.lastName\"><b>{{formErrors.lastName}}</b></mat-error>\n               </mat-form-field>\n             </div>\n      \n             <div class=\"row\">\n               <mat-form-field  class=\"col s4\">\n                 <mat-label>Initials</mat-label>    \n                 <input matInput placeholder=\"Initials\" #Initials ngModel formControlName=\"Initials\">\n                 <mat-icon matPrefix>person_outline</mat-icon>\n               </mat-form-field>\n             </div>\n      \n             <div class=\"row\">\n               <mat-form-field class=\"col s4\">\n                 <mat-label>Email Address</mat-label>      \n                 <input matInput placeholder=\"Email address\" #emailAddress ngModel formControlName=\"emailAddress\" (blur)=\"logValidationErrors()\">\n                 <mat-icon matPrefix>mail</mat-icon>\n                 <mat-error *ngIf=\"formErrors.emailAddress\"><b>{{formErrors.emailAddress}}</b></mat-error>\n               </mat-form-field>\n             </div>\n      \n             <div class=\"row\">\n                 <div formGroupName=\"passwordGroup\">\n                   <mat-form-field  class=\"col s4\">\n                     <mat-label>Account Password</mat-label> \n                     <input type=\"password\" matInput placeholder=\"Password\" #password ngModel formControlName=\"password\" (blur)=\"logValidationErrors()\">\n                     <mat-icon matPrefix>enhanced_encryption</mat-icon>\n                     <mat-error *ngIf=\"formErrors.password\"><b>{{formErrors.password}}</b></mat-error>\n                   </mat-form-field> \n                   <mat-form-field class=\"col s4\">\n                     <mat-label>Confirm Password</mat-label> \n                     <input type=\"password\" matInput placeholder=\"Confirm-Password\" #confirmPassword ngModel formControlName=\"confirmPassword\" (blur)=\"logValidationErrors()\">\n                     <mat-icon matPrefix>enhanced_encryption</mat-icon>\n                     <mat-error *ngIf=\"formErrors.passwordGroup || formErrors.confirmPassword\">\n                       <b>{{formErrors.passwordGroup ? formErrors.passwordGroup : formErrors.confirmPassword}}</b>\n                     </mat-error>\n                   </mat-form-field>\n                 </div>\n             </div>\n      \n             <div class=\"row s12\">\n               <button color=\"primary\" [disabled]=\"!SignUpForm.valid\" mat-raised-button>Sign - UP</button>\n             </div>\n      \n      \n           </div>\n        </form>\n      </mat-card-content>\n      </mat-card>"
 
 /***/ }),
 
@@ -128,7 +128,7 @@ module.exports = "<p>sign-up works!</p>\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>users works!</p>\n"
+module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col m12 offset-s2\">\n      <div class=\"card primary\">\n\n        <mat-tab-group mat-stretch-tabs  color=\"primary\">\n          <mat-tab label = \"Sign-In\">\n            <app-sign-in></app-sign-in>\n          </mat-tab>\n          <mat-tab label = \"Sign-Up\"> \n            <app-sign-up></app-sign-up>\n          </mat-tab>\n        </mat-tab-group>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -170,6 +170,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _gallery_gallery_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./gallery/gallery.component */ "./src/app/gallery/gallery.component.ts");
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _contactus_contactus_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./contactus/contactus.component */ "./src/app/contactus/contactus.component.ts");
+/* harmony import */ var _users_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./users/sign-up/sign-up.component */ "./src/app/users/sign-up/sign-up.component.ts");
+/* harmony import */ var _users_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./users/sign-in/sign-in.component */ "./src/app/users/sign-in/sign-in.component.ts");
+/* harmony import */ var _users_users_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./users/users.component */ "./src/app/users/users.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -181,11 +184,23 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
+
 const routes = [
     { path: '', component: _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"], pathMatch: 'full' },
     { path: 'home', component: _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
     { path: 'contactus', component: _contactus_contactus_component__WEBPACK_IMPORTED_MODULE_4__["ContactusComponent"] },
     { path: 'images', component: _gallery_gallery_component__WEBPACK_IMPORTED_MODULE_2__["GalleryComponent"] },
+    { path: 'members', redirectTo: '/login', pathMatch: 'full' },
+    {
+        path: 'signup', component: _users_users_component__WEBPACK_IMPORTED_MODULE_7__["UsersComponent"],
+        children: [{ path: '', component: _users_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_5__["SignUpComponent"] }]
+    },
+    {
+        path: 'login', component: _users_users_component__WEBPACK_IMPORTED_MODULE_7__["UsersComponent"],
+        children: [{ path: '', component: _users_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_6__["SignInComponent"] }]
+    },
 ];
 let AppRoutingModule = class AppRoutingModule {
 };
@@ -926,6 +941,80 @@ SidenavListComponent = __decorate([
 
 /***/ }),
 
+/***/ "./src/app/shared/services/User-Service/user.service.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/shared/services/User-Service/user.service.ts ***!
+  \**************************************************************/
+/*! exports provided: UserService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserService", function() { return UserService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+let UserService = class UserService {
+    constructor(http) {
+        this.http = http;
+        this.rootUrl = 'http://localhost:54916/';
+    }
+    registerUser(user) {
+        const body = {
+            UserName: user.UserName,
+            Password: user.Password,
+            Email: user.Email,
+            FirstName: user.FirstName,
+            LastName: user.LastName
+        };
+        var reqHeader = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({ 'No-Auth': 'True' });
+        return this.http.post(this.rootUrl + 'api/ApplicationUser/Register', body, { headers: reqHeader });
+    }
+    userAuthentication(formData) {
+        return this.http.post(this.rootUrl + 'api/applicationUser/Login', formData);
+    }
+    getUserProfile() {
+        var token = localStorage.getItem('token');
+        var tokenHeader = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({ 'Authorization': ' Bearer ' + token });
+        return this.http.get(this.rootUrl + 'api/UserProfile', { headers: tokenHeader });
+    }
+    roleMatch(allowedRoles) {
+        var isMatch = false;
+        var payLoad = JSON.parse(window.atob(localStorage.getItem('token').split('.')[1]));
+        var userRole = payLoad.role;
+        allowedRoles.forEach(element => {
+            if (userRole == element) {
+                isMatch = true;
+                return false;
+            }
+        });
+        return isMatch;
+    }
+};
+UserService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] }
+];
+UserService = __decorate([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+        providedIn: 'root'
+    }),
+    __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+], UserService);
+
+
+
+/***/ }),
+
 /***/ "./src/app/shared/services/email-service/email.service.ts":
 /*!****************************************************************!*\
   !*** ./src/app/shared/services/email-service/email.service.ts ***!
@@ -968,7 +1057,7 @@ EmailService = __decorate([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3VzZXJzL3NpZ24taW4vc2lnbi1pbi5jb21wb25lbnQuY3NzIn0= */"
+module.exports = ".input-field-class {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n.example-container > * {\r\n  width: 100%;\r\n}\r\n\r\n.login-icon{\r\nmargin-left: 10px;\r\n}\r\n\r\n.icon-section{\r\nmargin-right: 10px;\r\n}\r\n\r\n::ng-deep .mat-card-header{\r\nbackground-color: #1b942b !important;\r\ncolor: white;\r\npadding:5px !important;\r\n}\r\n\r\n::ng-deep .mat-card{\r\npadding:0 !important;\r\n}\r\n\r\n::ng-deep .mat-card-content{\r\npadding:5px !important;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdXNlcnMvc2lnbi1pbi9zaWduLWluLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0FBQ3hCOztBQUVBO0VBQ0UsV0FBVztBQUNiOztBQUVBO0FBQ0EsaUJBQWlCO0FBQ2pCOztBQUVBO0FBQ0Esa0JBQWtCO0FBQ2xCOztBQUNBO0FBQ0Esb0NBQW9DO0FBQ3BDLFlBQVk7QUFDWixzQkFBc0I7QUFDdEI7O0FBRUE7QUFDQSxvQkFBb0I7QUFDcEI7O0FBRUE7QUFDQSxzQkFBc0I7QUFDdEIiLCJmaWxlIjoic3JjL2FwcC91c2Vycy9zaWduLWluL3NpZ24taW4uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5pbnB1dC1maWVsZC1jbGFzcyB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG59XHJcblxyXG4uZXhhbXBsZS1jb250YWluZXIgPiAqIHtcclxuICB3aWR0aDogMTAwJTtcclxufVxyXG5cclxuLmxvZ2luLWljb257XHJcbm1hcmdpbi1sZWZ0OiAxMHB4O1xyXG59XHJcblxyXG4uaWNvbi1zZWN0aW9ue1xyXG5tYXJnaW4tcmlnaHQ6IDEwcHg7XHJcbn1cclxuOjpuZy1kZWVwIC5tYXQtY2FyZC1oZWFkZXJ7XHJcbmJhY2tncm91bmQtY29sb3I6ICMxYjk0MmIgIWltcG9ydGFudDtcclxuY29sb3I6IHdoaXRlO1xyXG5wYWRkaW5nOjVweCAhaW1wb3J0YW50O1xyXG59XHJcblxyXG46Om5nLWRlZXAgLm1hdC1jYXJke1xyXG5wYWRkaW5nOjAgIWltcG9ydGFudDtcclxufVxyXG5cclxuOjpuZy1kZWVwIC5tYXQtY2FyZC1jb250ZW50e1xyXG5wYWRkaW5nOjVweCAhaW1wb3J0YW50O1xyXG59Il19 */"
 
 /***/ }),
 
@@ -983,6 +1072,10 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SignInComponent", function() { return SignInComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var src_app_shared_services_User_Service_user_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/shared/services/User-Service/user.service */ "./src/app/shared/services/User-Service/user.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var ngx_toastr__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ngx-toastr */ "./node_modules/ngx-toastr/fesm2015/ngx-toastr.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -993,18 +1086,100 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+
+
 let SignInComponent = class SignInComponent {
-    constructor() { }
+    constructor(userService, toastr, fb, router) {
+        this.userService = userService;
+        this.toastr = toastr;
+        this.fb = fb;
+        this.router = router;
+        this.isLoginError = false;
+        this.emailPattern = "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
+        // This object will hold the messages to be displayed to the user
+        // Notice, each key in this object has the same name as the
+        // corresponding form control
+        this.formErrors = {
+            'username': '',
+            'password': ''
+        };
+        // This object contains all the validation messages for this form
+        this.validationMessages = {
+            'username': {
+                'required': 'User-name is required.',
+                'minlength': 'Please enter a valid username.',
+                'maxlength': 'This is not realistic '
+            },
+            'password': {
+                'required': 'Password is required.',
+                'minlength': 'Please enter a valid password',
+                'maxlength': 'This is not realistic '
+            }
+        };
+    }
     ngOnInit() {
+        this.SignInForm = this.fb.group({
+            username: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].minLength(5), _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].maxLength(60)]),
+            password: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].minLength(5), _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].maxLength(60)])
+        });
+        this.SignInForm.valueChanges.subscribe((data) => {
+            this.logValidationErrors(this.SignInForm);
+        });
+    }
+    // Logs validation error messages
+    logValidationErrors(group = this.SignInForm) {
+        Object.keys(group.controls).forEach((key) => {
+            const abstractControl = group.get(key);
+            this.formErrors[key] = '';
+            if (abstractControl && !abstractControl.valid
+                && (abstractControl.touched || abstractControl.dirty)) {
+                const messages = this.validationMessages[key];
+                for (const errorKey in abstractControl.errors) {
+                    if (errorKey) {
+                        this.formErrors[key] += messages[errorKey] + ' ';
+                    }
+                }
+            }
+        });
+    }
+    OnSubmit(form) {
+        var formData = form.value;
+        this.userService.userAuthentication(formData).subscribe((data) => {
+            form.reset();
+            localStorage.setItem('token', data.token);
+            this.router.navigate(['admin/home']);
+        }, err => {
+            this.isLoginError = true;
+            if (err.status == 400) {
+                this.toastr.error('Username or password is incorrect.', 'Authentication failed.');
+            }
+            else {
+                console.log("DATA" + formData);
+                form.reset();
+            }
+        });
+    }
+    resetForm(form) {
+        if (form != null) {
+            form.reset();
+        }
     }
 };
+SignInComponent.ctorParameters = () => [
+    { type: src_app_shared_services_User_Service_user_service__WEBPACK_IMPORTED_MODULE_1__["UserService"] },
+    { type: ngx_toastr__WEBPACK_IMPORTED_MODULE_4__["ToastrService"] },
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormBuilder"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
+];
 SignInComponent = __decorate([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
         selector: 'app-sign-in',
         template: __webpack_require__(/*! raw-loader!./sign-in.component.html */ "./node_modules/raw-loader/index.js!./src/app/users/sign-in/sign-in.component.html"),
         styles: [__webpack_require__(/*! ./sign-in.component.css */ "./src/app/users/sign-in/sign-in.component.css")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [src_app_shared_services_User_Service_user_service__WEBPACK_IMPORTED_MODULE_1__["UserService"], ngx_toastr__WEBPACK_IMPORTED_MODULE_4__["ToastrService"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormBuilder"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
 ], SignInComponent);
 
 
@@ -1018,7 +1193,7 @@ SignInComponent = __decorate([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3VzZXJzL3NpZ24tdXAvc2lnbi11cC5jb21wb25lbnQuY3NzIn0= */"
+module.exports = "::ng-deep .mat-card-header{\r\n  background-color: #1b942b !important;\r\n  color: white;\r\n  padding:5px !important;\r\n}\r\n\r\n::ng-deep .mat-card{\r\n  padding:0 !important;\r\n}\r\n\r\n::ng-deep .mat-card-content{\r\n  padding:5px !important;\r\n}\r\n\r\n.mat-form-field{\r\n  margin: 10px;\r\n} \r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdXNlcnMvc2lnbi11cC9zaWduLXVwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxvQ0FBb0M7RUFDcEMsWUFBWTtFQUNaLHNCQUFzQjtBQUN4Qjs7QUFFQTtFQUNFLG9CQUFvQjtBQUN0Qjs7QUFFQTtFQUNFLHNCQUFzQjtBQUN4Qjs7QUFFQTtFQUNFLFlBQVk7QUFDZCIsImZpbGUiOiJzcmMvYXBwL3VzZXJzL3NpZ24tdXAvc2lnbi11cC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiOjpuZy1kZWVwIC5tYXQtY2FyZC1oZWFkZXJ7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzFiOTQyYiAhaW1wb3J0YW50O1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxuICBwYWRkaW5nOjVweCAhaW1wb3J0YW50O1xyXG59XHJcblxyXG46Om5nLWRlZXAgLm1hdC1jYXJke1xyXG4gIHBhZGRpbmc6MCAhaW1wb3J0YW50O1xyXG59XHJcblxyXG46Om5nLWRlZXAgLm1hdC1jYXJkLWNvbnRlbnR7XHJcbiAgcGFkZGluZzo1cHggIWltcG9ydGFudDtcclxufVxyXG5cclxuLm1hdC1mb3JtLWZpZWxke1xyXG4gIG1hcmdpbjogMTBweDtcclxufSAiXX0= */"
 
 /***/ }),
 
@@ -1033,6 +1208,9 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SignUpComponent", function() { return SignUpComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var src_app_shared_services_User_Service_user_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/shared/services/User-Service/user.service */ "./src/app/shared/services/User-Service/user.service.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var ngx_toastr__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ngx-toastr */ "./node_modules/ngx-toastr/fesm2015/ngx-toastr.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1043,20 +1221,157 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+
 let SignUpComponent = class SignUpComponent {
-    constructor() { }
+    constructor(userService, toastr, fb) {
+        this.userService = userService;
+        this.toastr = toastr;
+        this.fb = fb;
+        this.emailPattern = "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
+        // This object will hold the messages to be displayed to the user
+        // Notice, each key in this object has the same name as the
+        // corresponding form control
+        this.formErrors = {
+            'firstName': '',
+            'lastName': '',
+            'emailAddress': '',
+            'password': '',
+            'confirmPassword': '',
+            'passwordGroup': '',
+        };
+        // This object contains all the validation messages for this form
+        this.validationMessages = {
+            'firstName': {
+                'required': 'First name is required.',
+                'minlength': 'First name must be greater than 2 characters.',
+                'maxlength': 'First name must be less than 100 characters.'
+            },
+            'lastName': {
+                'required': 'Last name is required.',
+                'minlength': 'Last name must be greater than 2 characters.',
+                'maxlength': 'Last name must be less than 100 characters.'
+            },
+            'emailAddress': {
+                'required': 'Email is required.',
+                'minlength': 'Email address must be greater than 11 characters.',
+                'maxlength': 'Email address must be less than 150 characters.',
+                'emailDomain': 'Email domian should be devine-tech.com'
+            },
+            'password': {
+                'required': 'Password is required.',
+                'minlength': 'Password must be greater than 5 characters.',
+                'maxlength': 'Password must be less than 150 characters.',
+            },
+            'confirmPassword': {
+                'required': 'Confirm Password is required.',
+                'minlength': 'Confirm Password must be greater than 5 characters.',
+                'maxlength': 'Confirm Password must be less than 150 characters.',
+            },
+            'passwordGroup': {
+                'passwordMisMatch': 'Password and confirm Password do not match'
+            }
+        };
+        this.hasError = (controlName, errorName) => {
+            return this.SignUpForm.controls[controlName].hasError(errorName);
+        };
+    }
     ngOnInit() {
+        this.SignUpForm = this.fb.group({
+            firstName: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].minLength(2), _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(60)]),
+            lastName: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].minLength(2), _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(60)]),
+            Initials: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(60)]),
+            emailAddress: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].minLength(11), _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(150)]),
+            passwordGroup: this.fb.group({
+                password: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].minLength(5), _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(60)]),
+                confirmPassword: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].minLength(5), _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(60)]),
+            }, { validators: matchPassword }),
+        });
+        this.SignUpForm.valueChanges.subscribe((data) => {
+            this.logValidationErrors(this.SignUpForm);
+        });
+    }
+    // Logs validation error messages
+    logValidationErrors(group = this.SignUpForm) {
+        Object.keys(group.controls).forEach((key) => {
+            const abstractControl = group.get(key);
+            this.formErrors[key] = '';
+            if (abstractControl && !abstractControl.valid
+                && (abstractControl.touched || abstractControl.dirty)) {
+                const messages = this.validationMessages[key];
+                for (const errorKey in abstractControl.errors) {
+                    if (errorKey) {
+                        this.formErrors[key] += messages[errorKey] + ' ';
+                    }
+                }
+            }
+            if (abstractControl instanceof _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormGroup"]) {
+                this.logValidationErrors(abstractControl);
+            }
+        });
+    }
+    OnSubmit(form) {
+        var formData = form.value;
+        const userData = this.getUserInformation(formData);
+        this.userService.registerUser(userData)
+            .subscribe((data) => {
+            if (data.succeeded == true) {
+                this.resetForm(form);
+                this.toastr.success('User registration successful', "Success!");
+            }
+            else
+                this.toastr.error(data.errors[0].description);
+        });
+    }
+    getUserInformation(formData) {
+        return {
+            UserName: formData.emailAddress,
+            Password: formData.passwordGroup.password,
+            Email: formData.emailAddress,
+            FirstName: formData.firstName,
+            LastName: formData.lastName
+        };
+    }
+    resetForm(form) {
+        if (form != null)
+            form.reset();
+        this.user = {
+            UserName: '',
+            Password: '',
+            Email: '',
+            FirstName: '',
+            LastName: ''
+        };
     }
 };
+SignUpComponent.ctorParameters = () => [
+    { type: src_app_shared_services_User_Service_user_service__WEBPACK_IMPORTED_MODULE_1__["UserService"] },
+    { type: ngx_toastr__WEBPACK_IMPORTED_MODULE_3__["ToastrService"] },
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] }
+];
 SignUpComponent = __decorate([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
         selector: 'app-sign-up',
         template: __webpack_require__(/*! raw-loader!./sign-up.component.html */ "./node_modules/raw-loader/index.js!./src/app/users/sign-up/sign-up.component.html"),
         styles: [__webpack_require__(/*! ./sign-up.component.css */ "./src/app/users/sign-up/sign-up.component.css")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [src_app_shared_services_User_Service_user_service__WEBPACK_IMPORTED_MODULE_1__["UserService"], ngx_toastr__WEBPACK_IMPORTED_MODULE_3__["ToastrService"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"]])
 ], SignUpComponent);
 
+function matchPassword(group) {
+    const passwordControl = group.get('password');
+    const confirmPasswordControl = group.get('confirmPassword');
+    console.log(`Value of password is : ${passwordControl.value} and confirm Password : ${confirmPasswordControl.value}`);
+    if (passwordControl.value === confirmPasswordControl.value || confirmPasswordControl.pristine) {
+        console.log("Matched");
+        return null;
+    }
+    else {
+        console.log("Mis-Matched");
+        return { 'passwordMisMatch': true };
+    }
+}
 
 
 /***/ }),
